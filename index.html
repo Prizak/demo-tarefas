@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lista de Tarefas (demo)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Lista de Tarefas</h1>
+    <p class="aviso">Demonstração fictícia. Os dados somem ao recarregar a página.</p>
+
+    <form id="formulario" class="formulario">
+      <label for="nova-tarefa">Nova tarefa</label>
+      <div class="linha">
+        <input type="text" id="nova-tarefa" autocomplete="off" required>
+        <button type="submit">Adicionar</button>
+      </div>
+    </form>
+
+    <p id="vazio" class="vazio">Nenhuma tarefa por enquanto.</p>
+    <ul id="lista" class="lista" aria-label="Tarefas"></ul>
+    <p id="status" class="visualmente-oculto" role="status" aria-live="polite"></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
